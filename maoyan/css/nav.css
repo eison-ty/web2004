@@ -1,0 +1,60 @@
+html,body,div,img{margin: 0;padding: 0;}
+html,body{
+    background-color: rgb(48,47,59);
+}
+/* 导航样式 */
+#top{
+    width: 100%;height: 80px;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+}
+/* 导航左部 */
+#left{
+    display: flex;
+    line-height: 43px;
+    margin-left: 20px;
+}
+#left>div{
+    padding: 20px 10px;
+    font-size: 16px;
+}
+#left>div>img{
+    width: 200px;height: 45px;
+}
+/* 导航中部 */
+#top>div:nth-child(2){
+    width: 30%;height: 60px;
+    background-color: #000;
+    border-radius: 100px;
+    /* margin: 10px 460px 10px 80px; */
+    margin: 10px 24% 10px 4%;
+}
+#top>div:nth-child(2)>div:first-child,#top>div:nth-child(2)>div:first-child,#top>div:nth-child(2)>div:nth-child(2),#top>div:nth-child(2)>div:nth-child(3),#top>div:nth-child(2)>div:last-child{
+    width: 22.5%;height: 46px;
+    text-align: center;
+    line-height: 46px;
+    float: left;
+    margin: 7px 7px;
+    
+}
+#top>div:nth-child(2)>div:first-child{
+    background-color: #4c4b57;
+    border-radius: 50px;
+}
+/* 导航右部 */
+#top>div:nth-child(3),#top>div:last-child{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #4c4b57;
+    border: 1px solid rgba(255,255,255,0.20);
+    border-radius: 50px;
+    margin: 20px 7px;
+}
+#top>div:nth-child(3){
+    width: 5%;
+}
+#top>div:last-child{
+    width: 8%;
+}
