@@ -1,4 +1,4 @@
-var date=(()=>{
+var gettime=()=>{
     var myDate=new Date();
     var mymonth=myDate.getMonth()+1;
     var myday=myDate.getDate();
@@ -12,5 +12,6 @@ var date=(()=>{
     var mydate=myDate.getFullYear()+"-"+mymonth+"-"+myday;
     var mytime=myDate.toLocaleTimeString('chinese',{hour12:false}); 
     console.log(mydate,mytime);
-    divT.innerHTML=mydate;
-})()
+    document.getElementById("get_date").innerHTML=mydate;
+    document.getElementById("get_time").innerHTML=mytime;
+}

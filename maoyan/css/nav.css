@@ -1,42 +1,53 @@
-html,body,div,img{margin: 0;padding: 0;}
+html,body,div,img,div,span,a,p{margin: 0;padding: 0;}
 html,body{
-    background-color: rgb(48,47,59);
+    background-color: #000;
+}
+a{
+    color: #fff;
+    text-decoration: none;
 }
 /* 导航样式 */
 #top{
-    width: 100%;height: 80px;
-    font-size: 20px;
+    width: 100%;height: 50px;
+    font-size: 12px;
     color: #fff;
     display: flex;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(48,47,59);
 }
 /* 导航左部 */
 #left{
     display: flex;
-    line-height: 43px;
-    margin-left: 20px;
+}
+#get_date{
+    width: 80px;
+}
+#left>div:last-child{
+    width: 100px;
+    color: rgba(255,255,255,0.6);
 }
 #left>div{
-    padding: 20px 10px;
-    font-size: 16px;
+    padding: 17px 10px;
+}
+#left>div:first-child{
+    padding-top: 10px;
 }
 #left>div>img{
-    width: 200px;height: 45px;
+    width: 135px;height: 30px;
 }
 /* 导航中部 */
 #top>div:nth-child(2){
-    width: 30%;height: 60px;
+    width: 400px;height: 40px;
     background-color: #000;
     border-radius: 100px;
-    /* margin: 10px 460px 10px 80px; */
-    margin: 10px 24% 10px 4%;
+    margin: 5px 270px 5px 80px;
 }
 #top>div:nth-child(2)>div:first-child,#top>div:nth-child(2)>div:first-child,#top>div:nth-child(2)>div:nth-child(2),#top>div:nth-child(2)>div:nth-child(3),#top>div:nth-child(2)>div:last-child{
-    width: 22.5%;height: 46px;
-    text-align: center;
-    line-height: 46px;
+    width: 80px;height: 33px;
+    line-height: 36px;
     float: left;
-    margin: 7px 7px;
-    
+    margin: 3px 7px;
 }
 #top>div:nth-child(2)>div:first-child{
     background-color: #4c4b57;
@@ -44,17 +55,124 @@ html,body{
 }
 /* 导航右部 */
 #top>div:nth-child(3),#top>div:last-child{
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background-color: #4c4b57;
+    height: 28px;
+    line-height: 28px;
+    background-color: rgba(255,255,255,0.10);
     border: 1px solid rgba(255,255,255,0.20);
     border-radius: 50px;
-    margin: 20px 7px;
+    margin: 10px 7px;
 }
 #top>div:nth-child(3){
-    width: 5%;
+    width: 80px;
 }
 #top>div:last-child{
-    width: 8%;
+    width: 120px;
+}
+/* 页面主体左部 */
+#bot{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+#bot_left{
+    width: 774px;height: 564px;
+    margin: 20px 10px 20px 20px;
+    background-color: rgb(69,68,84);
+    border-radius: 6px;
+}
+/* 页面主体左部top */
+#bot_left>div>div:first-child{
+    height: 71px;
+    display: flex;
+    line-height: 71px;
+}
+#bot_left>div>div:first-child>div:first-child{
+    font-size: 22px;
+    padding-left: 20px;
+}
+#bot_left>div>div:first-child>div:nth-child(2){
+    width: 130px;
+    height: 28px;
+    margin: 21.5px 10px;
+    font-size: 12px;
+    background-color: #000;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+#bot_left>div>div:first-child>div:nth-child(2)>span:first-child{
+    width: 60px;
+    height: 25px;
+    background-color: #4c4b57;
+    border-radius: 50px;
+    display: inline-block;
+    line-height: 25px;
+    position: absolute;
+    left: 4px;top: 1px;
+}
+#bot_left>div>div:first-child>div:nth-child(2)>span:last-child{
+    width: 60px;
+    height: 25px;
+    display: inline-block;
+    color: #ccc;
+    position: absolute;
+    left: 63px;top: -22px;
+}
+#bot_left>div>div:first-child>div:last-child{
+    color: #ccc;
+    font-size: 13px;
+    padding-left: 455px;
+}
+/* 页面主体左部center */
+#bot_left>div>div:nth-child(2){
+    height: 42px;
+    line-height: 42px;
+    font-size: 13px;
+    color: #ccc;
+    display: flex;
+    text-align: right;
+}
+#bot_left>div>div:nth-child(2)>div{
+    width: 163px;
+    background-color: rgb(56,55,67);
+}
+#bot_left>div>div:nth-child(2)>div:nth-child(2){
+    text-align: center;
+    padding-right: 20px;
+}
+#bot_left>div>div:nth-child(2)>div:first-child{
+    width: 285px;
+    text-align: left;
+    padding-left: 20px;
+}
+#bot_left>div>div:nth-child(2)>div:last-child{
+    padding-right: 20px;
+}
+/* 页面主体左部buttom */
+#bot_left>div>div:last-child{
+    height: 450px;
+    background: url(../img/index_bg.svg) no-repeat center top;
+}
+/* 页面主体右部 */
+#bot_right{
+    width: 497px;height: 564px;
+    margin: 20px 20px 20px 10px;
+}
+#bot_right>div:first-child,#bot_right>div:last-child{
+    width: 497px;height: 272px;
+    border-radius: 6px;
+    background-color: rgb(69,68,84);
+}
+#bot_right>div{
+    margin-bottom: 20px;
+}
+#bot_right>div>div:first-child{
+    height: 71px;
+}
+#bot_right>div>div:nth-child(2){
+    height: 44px;
+}
+#bot_right>div>div:nth-child(3){
+    overflow: hidden;
+    height: 140px;
 }
