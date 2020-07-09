@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猫眼专业版-实时票房</title>
+    <link rel="icon" href="../img/logo.ico">
+    <link rel="stylesheet" href="../css/movie.css">
+    <script src="../js/data.js"></script>
+</head>
+<body>
+    <!-- 头部导航 -->
+    <div id="top">
+        <div id="left">
+            <div>
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div>
+            <div><span><a href="#" id="get_date"></a></span></div>
+            </div>
+            <div>北京时间 <span id="get_time"></span></div>
+        </div>
+        <div>
+            <div><a href="#">综合数据</a></div>
+            <div><a href="#">电影票房</a></div>
+            <div><a href="#">网波热度</a></div>
+            <div><a href="#">电视收视</a></div>
+        </div>
+        <div><a href="#">全屏</a></div>
+        <div><a href="#">返回常规版></a></div>
+    </div>
+    <div id="bottom">
+        <img src="../img/ie.svg" alt="">
+    </div>
+    <!-- 时间获取 -->
+    <script>
+        gettime();
+        setInterval("gettime()",1000);
+    </script>
+</body>
+</html>
